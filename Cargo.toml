@@ -1,0 +1,12 @@
+[package]
+name = "screencast-mirror"
+version = "0.1.0"
+edition = "2024"
+description = "Mirror a window using the XDG ScreenCast portal"
+license = "MIT"
+
+[dependencies]
+anyhow = "1"
+ashpd = { version = "0.12", default-features = false, features = ["async-std", "gtk4"] }
+gtk = { package = "gtk4", version = "0.10", features = ["v4_8"] }
+gst = { package = "gstreamer", version = "0.24" }
